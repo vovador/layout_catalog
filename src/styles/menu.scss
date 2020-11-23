@@ -11,6 +11,8 @@
   
   &__link {
     @include menu-link-style;
+
+    transition: color 0.6s cubic-bezier(0.61, 1, 0.88, 1);
   }
   
   &__item:not(:last-child) {

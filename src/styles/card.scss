@@ -1,5 +1,5 @@
 .card {
-  padding: 14px 14px 15px;
+  padding: 0 14px 15px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -8,11 +8,21 @@
   background-color: #fff;
 
   &__image {
-    @include card-image(160px,134px,16px);
+    @include card-image(160px,134px,15px);
+    box-sizing: content-box;
+    border: 3px solid transparent;
+    padding-top: 12px;
+
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.2,1.2);
+      border: 3px solid #f3f3f3;
+    }
   }
   
   &__info {
-    margin-top: 45px;
+    margin-top: 42px;
   
     line-height: 15px;
     @include navigation-text;
@@ -35,7 +45,7 @@
   
   &__price-text {
     align-self: flex-end;
-  
+
     @include prompt-text;
   }
   
@@ -66,12 +76,12 @@
     background-color: $main-page-color;
   
     @include optional-button-text(14px,700);
+
+    transition: background-color 0.8s cubic-bezier(0.61, 1, 0.88, 1);
   
     &:hover {
       color: $main-page-color;
       background-color: #fff;
     }
-  
   }
-  
 }
