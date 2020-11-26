@@ -1,4 +1,8 @@
 .menu {
+
+  @media (max-width: 932px) {
+    display: none;
+  }
   &__list {
     display: flex;
     justify-content: space-around;

@@ -4,6 +4,10 @@
   @media screen and (min-width: 1448px) {
     @include header-preferences(130px);
   }
+
+  @media screen and (min-width: 2000px) {
+    @include header-preferences(300px);
+  }
   
   &__logo-link {
     @include logo-link-normalizer;

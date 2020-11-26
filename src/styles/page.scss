@@ -1,14 +1,6 @@
 .page {
 
   &__catalog {
-    margin-top: 50px;
-    @include catalog-side-margins(40px);
-  
-    @media screen and (min-width: 1200px) {
-      @include catalog-side-margins(128px);
-    }
-    @media screen and (min-width: 1448px) {
-      @include catalog-side-margins(250px);
-    }
+    margin: 50px auto;
   }
 }

@@ -6,6 +6,7 @@
 }
 
 @mixin header-preferences($flank) {
+  width: 100%;
   height: $header-height;
   display: flex;
   justify-content: space-between;
